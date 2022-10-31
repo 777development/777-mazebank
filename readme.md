@@ -14,3 +14,4 @@
 
 ## Credits
 | Ranjit Develops | https://github.com/Ranjit-Develops
+| QBCore | qb-bankrobbery
