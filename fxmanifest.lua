@@ -1,13 +1,13 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'Bankrobbery for QB-Core'
-version '1.2.0'
+description '777 Maze Bank for QB-Core'
+version '1.0'
 
 ui_page 'html/index.html'
 
 shared_scripts {
-    'sh_config.lua', -- Shared config
+    'sh_config.lua',
     '@qb-core/shared/locale.lua',
     'locales/en.lua',
     'locales/*.lua',
@@ -18,7 +18,7 @@ shared_scripts {
 client_scripts {
     '@PolyZone/client.lua',
     '@PolyZone/BoxZone.lua',
-    'cl_config.lua', -- Client config
+    'cl_config.lua',
     'client/powerstation.lua',
     'client/doors.lua',
     'client/maze.lua',
@@ -26,7 +26,7 @@ client_scripts {
 }
 
 server_scripts {
-    'sv_config.lua', -- Server config
+    'sv_config.lua',
     'server/main.lua'
 }
 
