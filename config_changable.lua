@@ -1,0 +1,10 @@
+local QBCore = exports['qb-core']:GetCoreObject()
+
+RegisterNetEvent('777-mazebank:client:GiveGold')
+AddEventHandler("777-mazebank:client:GiveGold", function()
+    local playerPed = PlayerPedId()
+    TaskStartScenarioInPlace(playerPed, "CODE_HUMAN_MEDIC_TEND_TO_DEAD")
+    progressBar("Opening Vault ...")
+    TriggerServerEvent("777-mazebank:Server:AddItem", "goldbar", 1)
+    TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["goldbar"], "add", 1)
+end)
